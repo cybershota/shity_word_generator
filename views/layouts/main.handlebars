@@ -1,29 +1,114 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <title>Shitty Word Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trash Talk Generator</title>
 
-  <!-- include bootstrap stylesheets -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- link css files -->
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
 
   <!-- include fontawesome stylesheets -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional"
+      rel="stylesheet">
 </head>
 
 <body>
-  {{{body}}}
 
-<!-- scripts for loading bootstrap related libraries -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<div style="height: 700px; weight: auto;">
+
+<header>
+{{!-- Navigation bar --}}
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <i class="fas fa-book-dead"></i>
+    幹話產生器
+  </a>
+</nav>
+</header>
+
+{{!-- generation-block --}}
+
+<div class="container">
+  {{!-- title --}}
+  <div class="row" style="margin: 20px;">
+    <div class="col, mx-auto">
+      <h1 class="font-weight-bold" style="margin: 30px;">你想對誰說幹話？</h1>
+    </div>
+  </div>
+  {{!-- select grid --}}
+  <div class="row" style="margin: 20px;">
+    {{!-- 工程師 --}}
+    <div class="col, mx-auto">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/images/face – 1@2x.png" alt="Card image cap">
+        <div class="card-body mx-auto">
+          <div class="custom-control custom-radio ">
+            <input type="radio" class="custom-control-input" id="engineerchecked" name="defaultExampleRadios">
+            <label class="custom-control-label" for="engineerchecked">工程師</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{!-- 設計師 --}}
+    <div class="col, mx-auto">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/images/face@2x.png" alt="Card image cap">
+        <div class="card-body mx-auto">
+          <div class="custom-control custom-radio ">
+            <input type="radio" class="custom-control-input" id="designerchecked" name="defaultExampleRadios">
+            <label class="custom-control-label" for="designerchecked">設計師</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{!-- 創業家 --}}
+    <div class="col, mx-auto">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/images/face – 2@2x.png" alt="Card image cap">
+        <div class="card-body mx-auto">
+          <div class="custom-control custom-radio ">
+            <input type="radio" class="custom-control-input" id="entrepreneurchecked" name="defaultExampleRadios">
+            <label class="custom-control-label" for="entrepreneurchecked">創業家</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- 輸出欄位 --}}
+    <div class="row" style="margin: 20px; padding:20px;">
+      <div class="col col-lg-2">
+        <button type="button" class="btn btn-danger"><h5 class="font-weight-bold">產生幹話</h5></button>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+        
+      </div>
+</div>
+
+  
+
+  
+
+
+
+      {{{body}}}
+
+      <!-- link javascript files -->
+      <script src="javascripts/jquery-3.3.1.js"></script>
+      <script src="javascripts/popper.min.js"></script>
+      <script src="javascripts/bootstrap.js"></script>
+      <script src="https://kit.fontawesome.com/c8f2260657.js" crossorigin="anonymous"></script>
+
 
 </body>
 

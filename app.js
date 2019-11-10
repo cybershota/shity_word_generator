@@ -16,10 +16,10 @@ app.use(express.static('public'))
 
 // render page
 app.get('/', (req, res) => {
-  res.render('index', {})
+  res.render('index')
 })
 
 // listen
 app.listen(port, () => {
-  console.log(`Express myself`)
+  console.log(`zangwang is Express himself`)
 })

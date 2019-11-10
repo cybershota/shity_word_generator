@@ -21,14 +21,14 @@
 - [x] `npm i express`、`handlebars`
 - [x] handlebars`views`、`layots` & `public` for static files
 - [x] express route
-- [ ] `bootsrap`
+- [x] `bootsrap`
 - [ ] handlebars html & css
 
 第二階段
 
 ## 加強
 - [ ] express route 設定還沒記熟
-- [ ] 
+- [ ] CSS字體設定
  
 ## 作業需求
 - [ ] 模仿密碼產生器流程
