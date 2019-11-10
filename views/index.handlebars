@@ -1,67 +1,79 @@
 {{!-- generation-block --}}
 <div class="container">
   <form method="POST" action="/">
-  
-  {{!-- title --}}
-  <div class="row" style="margin: 20px;">
-    <div class="col, mx-auto">
-      <h1 class="font-weight-bold" style="margin: 30px;">你想對誰說幹話？</h1>
+
+    {{!-- title --}}
+    <div class="row" style="margin: 10px;">
+      <div class="col, mx-auto">
+        <h1 class="font-weight-bold" style="margin: 20px;">你想對誰說幹話？</h1>
+      </div>
     </div>
-  </div>
-  {{!-- select grid --}}
-  <div class="row" style="margin: 20px;">
-    {{!-- 工程師 --}}
-    <div class="col, mx-auto">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/images/face – 1@2x.png" alt="Card image cap">
-        <div class="card-body mx-auto">
-          <div class="custom-control custom-radio ">
-            <input type="radio" class="custom-control-input" id="engineer" name="engineer">
-            <label class="custom-control-label" for="engineer">工程師</label>
+
+
+    {{!-- select grid --}}
+    <div class="row" style="margin: 20px;">
+      {{!-- 工程師 --}}
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="/images/face – 1@2x.png" alt="Card image cap">
+          <div class="card-body mx-auto">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="engineer" id="engineer">
+              <label class="custom-control-label" for="engineer">
+                工程師
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- 設計師 --}}
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="/images/face@2x.png" alt="Card image cap">
+          <div class="card-body mx-auto">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="designer" id="designer" >
+              <label class="custom-control-label" for="designer">
+                設計師
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- 創業家 --}}
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="/images/face – 2@2x.png" alt="Card image cap">
+          <div class="card-body mx-auto">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="entrepreneur" id="entrepreneur">
+              <label class="custom-control-label" for="entrepreneur">
+                創業家
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    {{!-- 設計師 --}}
-    <div class="col, mx-auto">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/images/face@2x.png" alt="Card image cap">
-        <div class="card-body mx-auto">
-          <div class="custom-control custom-radio ">
-            <input type="radio" class="custom-control-input" id="designer" name="designer">
-            <label class="custom-control-label" for="designer">設計師</label>
-          </div>
+    {{!-- 輸出欄位 --}}
+    <div class="row" style="margin: 20px; padding:20px;">
+      <div class="col col-lg-2">
+        <button type="submit" class="btn btn-danger">
+          <h5 class="font-weight-bold">產生幹話</h5>
+        </button>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" style="font-size: 20px;" rows="2">
+        {{#if trashTalk}}
+        {{trashTalk}}
+        {{/if}}
+        </textarea>
         </div>
       </div>
+
     </div>
-    {{!-- 創業家 --}}
-    <div class="col, mx-auto">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/images/face – 2@2x.png" alt="Card image cap">
-        <div class="card-body mx-auto">
-          <div class="custom-control custom-radio ">
-            <input type="radio" class="custom-control-input" id="entrepreneur" name="entrepreneur">
-            <label class="custom-control-label" for="entrepreneur">創業家</label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{!-- 輸出欄位 --}}
-  <div class="row" style="margin: 20px; padding:20px;">
-    <div class="col col-lg-2">
-      <button type="submit" class="btn btn-danger">
-        <h5 class="font-weight-bold">產生幹話</h5>
-      </button>
-    </div>
-    <div class="col">
-      <div class="form-group">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-    </div>
-  
-  </div>
-  
+
   </form>
-  
+
 </div>

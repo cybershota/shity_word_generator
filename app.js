@@ -10,6 +10,9 @@ const exphbs = require('express-handlebars')
 // require bodyParser
 const bodyParser = require('body-parser')
 
+// 
+const generateTrashTalk = require('./generate_trash_talk')
+
 // handlebars semantic template
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
@@ -26,8 +29,10 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
+  let options = req.body
+  const trashTalk = generateTrashTalk(options)
   console.log('req.body', req.body)
-  res.render('index')
+  res.render('index', {trashTalk: trashTalk, options: options})
 })
 
 // listen
