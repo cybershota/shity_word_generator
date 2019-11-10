@@ -26,80 +26,12 @@
 <header>
 {{!-- Navigation bar --}}
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="/">
     <i class="fas fa-book-dead"></i>
     幹話產生器
   </a>
 </nav>
 </header>
-
-{{!-- generation-block --}}
-
-<div class="container">
-  {{!-- title --}}
-  <div class="row" style="margin: 20px;">
-    <div class="col, mx-auto">
-      <h1 class="font-weight-bold" style="margin: 30px;">你想對誰說幹話？</h1>
-    </div>
-  </div>
-  {{!-- select grid --}}
-  <div class="row" style="margin: 20px;">
-    {{!-- 工程師 --}}
-    <div class="col, mx-auto">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/images/face – 1@2x.png" alt="Card image cap">
-        <div class="card-body mx-auto">
-          <div class="custom-control custom-radio ">
-            <input type="radio" class="custom-control-input" id="engineerchecked" name="defaultExampleRadios">
-            <label class="custom-control-label" for="engineerchecked">工程師</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{!-- 設計師 --}}
-    <div class="col, mx-auto">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/images/face@2x.png" alt="Card image cap">
-        <div class="card-body mx-auto">
-          <div class="custom-control custom-radio ">
-            <input type="radio" class="custom-control-input" id="designerchecked" name="defaultExampleRadios">
-            <label class="custom-control-label" for="designerchecked">設計師</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{!-- 創業家 --}}
-    <div class="col, mx-auto">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/images/face – 2@2x.png" alt="Card image cap">
-        <div class="card-body mx-auto">
-          <div class="custom-control custom-radio ">
-            <input type="radio" class="custom-control-input" id="entrepreneurchecked" name="defaultExampleRadios">
-            <label class="custom-control-label" for="entrepreneurchecked">創業家</label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{!-- 輸出欄位 --}}
-    <div class="row" style="margin: 20px; padding:20px;">
-      <div class="col col-lg-2">
-        <button type="button" class="btn btn-danger"><h5 class="font-weight-bold">產生幹話</h5></button>
-      </div>
-      <div class="col">
-        <div class="form-group">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </div>
-        
-      </div>
-</div>
-
-  
-
-  
-
-
 
       {{{body}}}
 
